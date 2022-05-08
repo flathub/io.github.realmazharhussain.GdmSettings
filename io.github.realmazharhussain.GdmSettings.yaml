@@ -31,7 +31,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/jwestman/blueprint-compiler.git
-        commit: 3b39e0d541ed3f18441420228f1270bd167fa7fa
+        commit: eadbb11094ffbe855d99fcffb77e406a37ddd2a3
   - name: gdm-settings
     builddir: true
     buildsystem: meson
@@ -39,5 +39,5 @@ modules:
       - --buildtype=release
     sources:
       - type: archive
-        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v0.5.2.tar.gz
-        sha256: 9aa43fa7ed84e194a4f12e4691a4463a3199e7d3171aa363d5368144d361ba70
+        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v0.5.3.tar.gz
+        sha256: 9f13450540db54a52e1c3fc6386ee12b6acec737f6d0d29f3778100ed280d60b
