@@ -3,6 +3,7 @@ command: gdm-settings
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
 runtime-version: "42"
+
 finish-args:
   - --share=ipc
   - --device=dri
@@ -10,11 +11,8 @@ finish-args:
   - --socket=fallback-x11
   - --talk-name=org.freedesktop.Flatpak
   - --filesystem=host-os
-  - --filesystem=/etc/dconf/db/gdm.d
-  - --filesystem=/etc/dconf/profile/gdm
+
 cleanup:
-  - /bin/blueprint-compiler
-  - /lib/*/site-packages/blueprintcompiler
   - /include
   - /lib/pkgconfig
   - /man
@@ -24,14 +22,18 @@ cleanup:
   - /share/pkgconfig
   - '*.la'
   - '*.a'
+
 modules:
   - name: blueprint-compiler
     builddir: true
     buildsystem: meson
     sources:
-      - type: git
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler.git
-        commit: eadbb11094ffbe855d99fcffb77e406a37ddd2a3
+      - type: archive
+        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.2.0/blueprint-compiler-v0.2.0.tar.bz2
+        sha256: 74bb99161ba30abfc7302d2b3cbc400f05bcbda21ccb01c4b2e6f8f3f9874ca2
+    cleanup:
+      - "*"
+
   - name: gdm-settings
     builddir: true
     buildsystem: meson
@@ -39,5 +41,5 @@ modules:
       - --buildtype=release
     sources:
       - type: archive
-        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v0.5.3.tar.gz
-        sha256: 9f13450540db54a52e1c3fc6386ee12b6acec737f6d0d29f3778100ed280d60b
+        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v0.6.tar.gz
+        sha256: a8300b4992e4080c454a5cf4dd0d50c90a0f452ba3059619e443de9ee9f465a0
