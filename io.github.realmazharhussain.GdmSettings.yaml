@@ -10,6 +10,7 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --talk-name=org.freedesktop.Flatpak
+  - --filesystem=xdg-config/monitors.xml:ro
   - --filesystem=host-os
 
 cleanup:
@@ -37,9 +38,7 @@ modules:
   - name: gdm-settings
     builddir: true
     buildsystem: meson
-    config-opts:
-      - --buildtype=release
     sources:
       - type: archive
-        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v0.6.tar.gz
-        sha256: a8300b4992e4080c454a5cf4dd0d50c90a0f452ba3059619e443de9ee9f465a0
+        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v1.0-beta.1.tar.gz
+        sha256: a23733778d19821f9c41d09512406528b77c021924e7ae840549b18d675fc005
