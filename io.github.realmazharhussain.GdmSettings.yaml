@@ -30,15 +30,17 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.2.0/blueprint-compiler-v0.2.0.tar.bz2
-        sha256: 74bb99161ba30abfc7302d2b3cbc400f05bcbda21ccb01c4b2e6f8f3f9874ca2
+        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.4.0/blueprint-compiler-v0.4.0.tar.bz2
+        sha256: 316309c1527fbc7670aa3c41a7227452d129eedcad944c468ccce76bce70da3f
     cleanup:
       - "*"
 
   - name: gdm-settings
     builddir: true
     buildsystem: meson
+    config-opts:
+      - --buildtype=release
     sources:
       - type: archive
-        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v1.0-beta.4.tar.gz
-        sha256: c7a85508ba87dea03663a319f6893bbbcba4c2483438755e694d581105a6a5b7
+        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v1.0.tar.gz
+        sha256: 9ea34f42062c37f6f83603f6fa043f15d44b39b47fb81e1d9a551cd31fec2e4c
