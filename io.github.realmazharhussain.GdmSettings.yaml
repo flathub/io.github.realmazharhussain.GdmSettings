@@ -38,6 +38,8 @@ modules:
   - name: gdm-settings
     builddir: true
     buildsystem: meson
+    config-opts:
+      - --buildtype=release
     sources:
       - type: archive
         url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v1.0-beta.4.tar.gz
