@@ -43,4 +43,4 @@ modules:
     sources:
       - type: archive
         url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v1.1.tar.gz
-        sha256: 1854fe75c956523f50a5fe35a2b06a5ee73c2fe5256cd8b0c1d911ea39bdb199
+        sha256: 5f7f11f9541628c5cfaa0113e5eb5d5fd54b7357f658a78043f962ea0a00d60d
