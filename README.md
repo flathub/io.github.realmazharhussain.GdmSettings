@@ -1,2 +1,2 @@
 # Login Manager Settings (Flatpak)
-The official flatpak for [Login Manager Settings](https://github.com/realmazharhussain/gdm-settings.git) app.
+The official flatpak for [Login Manager Settings](https://realmazharhussain.github.io/gdm-settings) app.
