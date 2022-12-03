@@ -39,7 +39,9 @@ modules:
   - name: gdm-settings
     builddir: true
     buildsystem: meson
+    config-opts:
+      -  --buildtype=release
     sources:
       - type: archive
-        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v2.beta.1.tar.gz
-        sha256: 47ea4230365aad15b841485497e275ddaefcacd1b9d51e7932cbba0325e7bc50
+        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v2.0.tar.gz
+        sha256: bd01f3b65e7e13d1bf1e639beda57eeff5916e51404cae358d5ede393d67c84a
