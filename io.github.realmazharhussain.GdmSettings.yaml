@@ -41,5 +41,5 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v4.beta0.tar.gz
-        sha256: fd03e13f94eecddae7e79fff6222133371c2089a102abfc8ddb0b67df928974f
+        url: https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v4.beta1.tar.gz
+        sha256: aa6fada519884598b6b938732399532b04d44369136511666a1121acb1a303b9
