@@ -1,2 +1,2 @@
-# Login Manager Settings (Beta Flatpak)
-The official **beta** flatpak for [Login Manager Settings](https://gdm-settings.github.io) app.
+# GDM Settings (Beta Flatpak)
+The official **beta** flatpak for [GDM Settings](https://gdm-settings.github.io) app.
