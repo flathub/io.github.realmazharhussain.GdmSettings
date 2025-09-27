@@ -2,7 +2,7 @@ app-id: io.github.realmazharhussain.GdmSettings
 command: gdm-settings
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
-runtime-version: "48"
+runtime-version: "49"
 
 finish-args:
   - --share=ipc
@@ -26,16 +26,6 @@ cleanup:
   - '*.a'
 
 modules:
-  - name: blueprint-compiler
-    builddir: true
-    buildsystem: meson
-    sources:
-      - type: archive
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.16.0/blueprint-compiler-v0.16.0.tar.bz2
-        sha256: 77a5d593f433c8ca70a05390532cd186c60944cfa6bcd39296c1c2597a7a50fc
-    cleanup:
-      - "*"
-
   - name: gdm-settings
     builddir: true
     buildsystem: meson
