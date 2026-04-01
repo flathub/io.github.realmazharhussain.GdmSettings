@@ -14,17 +14,6 @@ finish-args:
   - --filesystem=host-etc
   - --filesystem=host-os
 
-cleanup:
-  - /include
-  - /lib/pkgconfig
-  - /man
-  - /share/doc
-  - /share/gtk-doc
-  - /share/man
-  - /share/pkgconfig
-  - '*.la'
-  - '*.a'
-
 modules:
   - name: gdm-settings
     builddir: true
